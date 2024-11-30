@@ -24,11 +24,11 @@ connection_name = "goit_mysql_db"
 
 # Визначення DAG
 with DAG(
-    "working_with_mysql_db",
+    "test_oleh",
     default_args=default_args,
     schedule_interval=None,  # DAG не має запланованого інтервалу виконання
     catchup=False,  # Вимкнути запуск пропущених задач
-    tags=["oleksiy"],  # Теги для класифікації DAG
+    tags=["oleh"],  # Теги для класифікації DAG
 ) as dag:
 
     # Завдання для створення схеми бази даних (якщо не існує)
